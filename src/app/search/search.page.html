@@ -1,0 +1,122 @@
+<ion-header [translucent]="true">
+  <ion-toolbar id="search-toolbar">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title id="search-title">Search</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Search</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-searchbar placeholder="Search Add Friend" clickable="true"></ion-searchbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-avatar class="avatar">
+                <img alt="Silhouette of a person's head" src="../../assets/img/mark.jpg" />
+              </ion-avatar>
+            </ion-col>
+            <ion-col size="6" class="custom-col">
+              Mark
+            </ion-col>
+            <ion-col size="4" class="custom-colo">
+              <ion-button id="open-toast" expand="block">Add Friend</ion-button>
+              <ion-toast trigger="open-toast" message="Add Friend" [duration]="2500"></ion-toast>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-avatar class="avatar">
+                <img alt="Silhouette of a person's head" src="../../assets/img/biden.jpg" />
+              </ion-avatar>
+            </ion-col>
+            <ion-col size="6" class="custom-col">
+              Biden
+            </ion-col>
+            <ion-col size="4" class="custom-colo">
+              <ion-button id="open-toas" expand="block">Unfriend</ion-button>
+              <ion-toast trigger="open-toas" message="Unfriend" [duration]="2500"></ion-toast>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-avatar class="avatar">
+                <img alt="Silhouette of a person's head" src="../../assets/img/jerome.jpg" />
+              </ion-avatar>
+            </ion-col>
+            <ion-col size="6" class="custom-col">
+              Jerome
+            </ion-col>
+            <ion-col size="4" class="custom-colo">
+              <ion-button id="open-toa" expand="block">Accept</ion-button>
+              <ion-toast trigger="open-toa" message="Accept" [duration]="2500"></ion-toast>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-avatar class="avatar">
+                <img alt="Silhouette of a person's head" src="../../assets/img/putin.jpg" />
+              </ion-avatar>
+            </ion-col>
+            <ion-col size="6" class="custom-col">
+              Vladimir
+            </ion-col>
+            <ion-col size="4" class="custom-colo">
+              <ion-button id="open-to" expand="block">Unfriend</ion-button>
+              <ion-toast trigger="open-to" message="Unfriend" [duration]="2500"></ion-toast>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="2">
+              <ion-avatar class="avatar">
+                <img alt="Silhouette of a person's head" src="../../assets/img/napo.jpg" />
+              </ion-avatar>
+            </ion-col>
+            <ion-col size="6" class="custom-col">
+              Napoleon
+            </ion-col>
+            <ion-col size="4" class="custom-colo">
+              <ion-button id="open-t" expand="block">Unfriend</ion-button>
+              <ion-toast trigger="open-t" message="Unfriend" [duration]="2500"></ion-toast>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

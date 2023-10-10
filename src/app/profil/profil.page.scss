@@ -1,0 +1,21 @@
+ion-avatar.center-avatar {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 100px;
+  height: 100px;
+}
+
+#container {
+  text-align: center;
+}
+
+.custom-link {
+  color: #100f0f; 
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}

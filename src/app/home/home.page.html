@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> HOME </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">HOME</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div *ngIf="userRole === 'admin'">
+      <ion-img src="https://static.republika.co.id/uploads/images/inpicture_slide/rancangan-dari-gedung-yang-akan-dibangun-di-1-queensbridge-_170210090232-546.jpg"></ion-img>
+      <p>Ini adalah rancangan dari sebuah gedung yang akan dibangun</p>
+      Anda adalah {{ userRole }}
+    </div>
+    <div *ngIf="userRole === 'superadmin'">
+      <ion-img src="https://docs-demo.ionic.io/assets/madison.jpg"></ion-img>
+      <p>Ini adalah sebuah gedung bernama Madison Building di Wisconsin</p>
+      Anda adalah {{ userRole }}
+    </div>
+    <ion-button [routerLink]="['/login']">Back</ion-button>
+  </div>
+  
+</ion-content>
